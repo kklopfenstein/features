@@ -1,0 +1,29 @@
+{
+    "dockerDefaultAddressPool": {
+        "image": "ubuntu:focal",
+        "features": {
+            "docker-in-docker": {
+                "version": "1.0.8",
+                "dockerDefaultAddressPool": "base=192.168.0.0/16,size=24"
+            }
+        }
+    },
+    "azureDnsAutoDetectionEnabled": {
+        "image": "ubuntu:focal",
+        "features": {
+            "docker-in-docker": {
+                "version": "1.0.8",
+                "azureDnsAutoDetection": true
+            }
+        }
+    },
+    "azureDnsAutoDetectionDisabled": {
+        "image": "ubuntu:focal",
+        "features": {
+            "docker-in-docker": {
+                "version": "1.0.8",
+                "azureDnsAutoDetection": false
+            }
+        }
+    }
+}
