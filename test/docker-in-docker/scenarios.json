@@ -1,0 +1,11 @@
+{
+    "default_address_pool_test": {
+        "image": "ubuntu:focal",
+        "features": {
+            "docker-in-docker": {
+                "version": "1.0.8",
+                "dockerDefaultAddressPool": "base=192.168.0.0/16,size=24"
+            }
+        }
+    }
+}
